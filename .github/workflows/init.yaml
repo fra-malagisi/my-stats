@@ -1,0 +1,16 @@
+name: fm-github-actions-test
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  - push
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+        with:
+          version: 8
