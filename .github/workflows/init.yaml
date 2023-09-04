@@ -1,5 +1,4 @@
-name: fm-github-actions-test
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: install
 
 on:
   - push
